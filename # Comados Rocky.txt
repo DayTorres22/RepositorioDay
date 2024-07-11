@@ -1,0 +1,65 @@
+# Comandos de gestión de archivos y directorios
+ls -- Muestra el contenido del directorio actual.
+ls -l -- Muestra el contenido del directorio actual con detalles.
+ls -a -- Muestra todos los archivos, incluidos los ocultos.
+cd [directorio] -- Cambia al directorio especificado.
+pwd -- Muestra la ruta del directorio actual.
+mkdir [directorio] -- Crea un nuevo directorio.
+rmdir [directorio] -- Elimina un directorio vacío.
+rm [archivo] -- Elimina un archivo.
+rm -r [directorio] -- Elimina un directorio y su contenido de forma recursiva.
+cp [origen] [destino] -- Copia archivos o directorios.
+mv [origen] [destino] -- Mueve o renombra archivos o directorios.
+touch [archivo] -- Crea un archivo vacío o actualiza la fecha de modificación.
+
+# Comandos de permisos y propiedades
+chmod [permisos] [archivo/directorio] -- Cambia los permisos de un archivo o directorio.
+chown [usuario] [archivo/directorio] -- Cambia el propietario de un archivo o directorio.
+chgrp [grupo] [archivo/directorio] -- Cambia el grupo de un archivo o directorio.
+
+# Comandos de visualización y edición de archivos
+cat [archivo] -- Muestra el contenido de un archivo.
+less [archivo] -- Muestra el contenido de un archivo página por página.
+head [archivo] -- Muestra las primeras líneas de un archivo.
+tail [archivo] -- Muestra las últimas líneas de un archivo.
+nano [archivo] -- Abre un editor de texto en la terminal para editar archivos.
+vi [archivo] -- Abre el editor de texto vi para editar archivos.
+
+# Comandos de gestión de usuarios y grupos
+adduser [usuario] -- Crea un nuevo usuario.
+userdel [usuario] -- Elimina un usuario.
+usermod -aG [grupo] [usuario] -- Añade un usuario a un grupo.
+groupadd [grupo] -- Crea un nuevo grupo.
+groupdel [grupo] -- Elimina un grupo.
+
+# Comandos de gestión de procesos
+ps -- Muestra una lista de los procesos en ejecución.
+top -- Muestra los procesos en ejecución en tiempo real.
+kill [PID] -- Finaliza un proceso por su ID.
+kill -9 [PID] -- Fuerza la finalización de un proceso por su ID.
+pkill [nombre] -- Finaliza todos los procesos con el nombre especificado.
+
+# Comandos de red
+ping [host] -- Envía paquetes ICMP a un host para comprobar su conectividad.
+ifconfig -- Muestra la configuración de red (requiere privilegios de root).
+ip a -- Muestra la configuración de red y direcciones IP.
+netstat -- Muestra estadísticas de red y conexiones.
+ssh [usuario]@[host] -- Inicia una sesión SSH con un host remoto.
+
+# Comandos de instalación de paquetes
+sudo apt update -- Actualiza la lista de paquetes (para distribuciones basadas en Debian/Ubuntu).
+sudo apt upgrade -- Actualiza los paquetes instalados (para distribuciones basadas en Debian/Ubuntu).
+sudo apt install [paquete] -- Instala un nuevo paquete (para distribuciones basadas en Debian/Ubuntu).
+sudo yum update -- Actualiza los paquetes (para distribuciones basadas en Red Hat/Fedora/CentOS/Rocky Linux).
+sudo yum install [paquete] -- Instala un nuevo paquete (para distribuciones basadas en Red Hat/Fedora/CentOS/Rocky Linux).
+
+# Comandos útiles misceláneos
+sudo [comando] -- Ejecuta un comando con privilegios de superusuario.
+history -- Muestra el historial de comandos.
+alias [nombre]='[comando]' -- Crea un alias para un comando.
+df -h -- Muestra el uso del disco de forma legible.
+du -h -- Muestra el tamaño de archivos y directorios de forma legible.
+free -h -- Muestra el uso de la memoria de forma legible.
+uname -a -- Muestra información del sistema.
+reboot -- Reinicia el sistema.
+shutdown -- Apaga el sistema.
